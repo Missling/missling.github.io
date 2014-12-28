@@ -1,47 +1,55 @@
 html {
-  background-color:   #E6FFFA;
+  background-color: white;
 }
 
 h1{
   text-align: center;
   width:100%;
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 5px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   font-weight: 300;
   font-size: 85px;
+  background-color: #FAFAFA;
+  margin-top: 0px;
+  margin-bottom: 0px;
   }
 
-h2{
-  font-size: 30px;
-  font-weight: 150;
-  color: #663300;
-}
-
-h3{
-  color:#663300;
+span{
+text-shadow: 2px 1px black;
+color: #46757E;
 }
 
 hr{
-  margin-top: 0px;
-  width: 90%;
-  margin:10px;
-  border-width: 5px;
+  border-style: groove;
 }
+
+h2{
+  font-size: 45px;
+  font-weight: 100;
+  color: black;
+  text-shadow: 1px 1px gray;
+}
+
 
 .left{
   float: left;
   width: 50%;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-left: 50px;
-
+  margin-left: 100px;
+  margin-top:50px;
 }
 
 .right{
   float: right;
   width: 30%;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
   margin-right: 50px;
+  margin-top: 50px;
+}
+
+#me{
+  font-style: italic;
+  color: #46757E;
 }
 
