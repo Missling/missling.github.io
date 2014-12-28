@@ -1,8 +1,47 @@
-hi{
-  position: fixed;
-  text-align: center;
+html {
+  background-color:   #E6FFFA;
 }
 
-*{
-  border: 1px solid black;
+h1{
+  text-align: center;
+  width:100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 5px;
+  font-weight: 300;
+  font-size: 85px;
+  }
+
+h2{
+  font-size: 30px;
+  font-weight: 150;
+  color: #663300;
 }
+
+h3{
+  color:#663300;
+}
+
+hr{
+  margin-top: 0px;
+  width: 90%;
+  margin:10px;
+  border-width: 5px;
+}
+
+.left{
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 50px;
+
+}
+
+.right{
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-right: 50px;
+}
+
