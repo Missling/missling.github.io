@@ -12,6 +12,15 @@ body {
 
 .footer {
   display: inline-block;
+  margin-left: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
 }
 
 h4 {
@@ -34,10 +43,6 @@ table {
 
 td {
   border: 1px solid #B0C4DE;
-}
-
-.footer{
-  margin-left: 200px;
 }
 
 hr {
