@@ -27,6 +27,7 @@ hr{
 h2{
   font-size: 45px;
   font-weight: 100;
+  text-align: center;
   color: black;
   text-shadow: 1px 1px gray;
 }
@@ -35,7 +36,7 @@ h2{
 .left{
   float: left;
   width: 50%;
-  text-align: center;
+  text-align: left;
   margin-left: 100px;
   margin-top:50px;
 }
@@ -51,5 +52,6 @@ h2{
 #me{
   font-style: italic;
   color: #46757E;
+  margin-bottom: 27px;
 }
 
