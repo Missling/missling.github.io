@@ -55,9 +55,14 @@ h2{
   margin-bottom: 27px;
 }
 
-iframe{
-  margin: 0 auto;
-  margin-bottom: 55px;
+iframe {
+    display: block;
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+    border: 0;
+    margin-bottom: 50px;
 }
+
 
 
