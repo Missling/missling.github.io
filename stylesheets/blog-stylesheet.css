@@ -31,17 +31,14 @@ h4 {
   float: right;
 }
 
-h3 {
+h2 {
   display: inline-block;
   width: 200px;
   text-align: center;
 }
 
-table {
-  float: right;
-  margin-top: 5px;
-  margin-right: 90px;
-  border: 1px solid gray;
+.navigation {
+  text-align: center;
 }
 
 td {
