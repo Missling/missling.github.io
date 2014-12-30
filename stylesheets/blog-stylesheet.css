@@ -3,18 +3,18 @@ body{
 }
 
 img{
-  margin-left: 50px;
+  margin-left: 100px;
   margin-bottom: 20px;
   width: 290px;
   height: 200px;
 }
 
 .text {
-  margin-left: 350px;
+  margin-left: 450px;
 }
 
 body {
-  width: 820px;
+  width: 1000px;
 }
 
 .footer {
@@ -40,13 +40,13 @@ h3 {
   text-align: center;
 }
 
+h5{
+  text-align: center;
+}
+
 .navigation {
   width: 400px;
   margin-left: 50px;
-}
-
-td {
-  border: 1px solid #B0C4DE;
 }
 
 hr {
@@ -57,3 +57,6 @@ span {
   font-weight: bold;
 }
 
+ul{
+  padding-left: 70px;
+}
