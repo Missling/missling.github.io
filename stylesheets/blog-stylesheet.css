@@ -9,7 +9,7 @@ img{
 }
 
 .text {
-  margin-left: 200px;
+  margin-left: 350px;
 }
 
 body {
@@ -21,6 +21,10 @@ body {
   margin-left: 200px;
 }
 
+h1 {
+  text-align: center;
+
+}
 
 h4 {
   font-size: 12px;
