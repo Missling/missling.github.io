@@ -2,6 +2,12 @@ body{
   background-image: http://www.hixie.ch/tests/adhoc/css/mozilla/opacity/black-0.5-0.0-h.png
 }
 
+img{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
 .text {
   margin-left: 200px;
 }
