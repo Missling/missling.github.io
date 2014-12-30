@@ -32,14 +32,15 @@ h4 {
 }
 
 h2 {
-  display: inline-block;
-  width: 200px;
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 
 .navigation {
   width: 300px;
-  height: 800px;
 }
 
 td {
