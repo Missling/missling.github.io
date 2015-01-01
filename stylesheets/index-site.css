@@ -10,7 +10,7 @@ h1{
   padding-top: 50px;
   font-weight: 300;
   font-size: 85px;
-  background-color: #FAFAFA;
+  background-color: #F9F4E3;
   margin-top: 0px;
   margin-bottom: 0px;
   }
@@ -28,8 +28,13 @@ h2{
   font-size: 45px;
   font-weight: 100;
   text-align: center;
-  color: black;
+  color: rgb(62, 150, 150);
   text-shadow: 1px 1px gray;
+}
+
+h3{
+  font-family: Myanmar MN;
+  text-align: center;
 }
 
 
@@ -39,6 +44,8 @@ h2{
   text-align: left;
   margin-left: 200px;
   margin-top:50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .right{
@@ -50,9 +57,13 @@ h2{
 }
 
 #me{
-  font-style: italic;
   color: #46757E;
   margin-bottom: 27px;
+  font-size: 15px;
+  font-style: calibri;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-indent: 0px;
 }
 
 iframe {
@@ -64,5 +75,45 @@ iframe {
     margin-bottom: 50px;
 }
 
+body{
+  font-family: helvetica;
+}
 
+section{
+  background-color: #F0F0F0 ;
+}
 
+p{
+  font-family: avenir;
+  text-indent: 20px;
+}
+
+.profile{
+  margin-top: 20px;
+}
+
+footer {
+  width:100%;
+  height:80px;
+  position:absolute;
+  bottom:0;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.date{
+  text-align: center;
+  color: rgb(108, 54, 54);
+}
+
+img{
+  margin-top: 25px;
+}
+
+footer {
+clear: both;
+}
