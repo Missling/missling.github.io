@@ -37,7 +37,6 @@ h3{
   text-align: center;
 }
 
-
 .left{
   float: left;
   width: 40%;
@@ -110,4 +109,13 @@ img{
 footer {
   clear: both;
   padding:30px; 
+}
+
+a:hover { 
+  background: #99E6E6;
+  color: white; 
+}
+
+a:visited {
+  color: #009999;
 }
