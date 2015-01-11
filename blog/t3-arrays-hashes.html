@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t3-arrays-hashes.css">
+
+</head>
+
+<body>
+  <img src = "../image/Seattle Pix.jpg">
+ 
+  <div class = "header">
+    <h1><!--insert blog--></h1>
+  </div>
+
+  <div class = "navigation">
+    <a href="../index.html"><h2>HOME</h2></a>
+    <ul>
+      <li><a href="#week_1_post">Week 1: Version Control, Git and Github</a></li>
+      <li><a href="#week_2_post">Week 2: Padding, Border and Margin</a></li>
+      <li>Week 3: Arrays and Hashes</li>
+    </ul>
+  </div>
+
+  <div class = "text">
+  <a id="week_1_post"><h1>Arrays and Hashes</h1></a>
+  <h5>January 9, 2015</h5>
+    <p>
+      Array is a list of elements that sit in between square brackets. Element includes, but not limited to strings, array, and integers. 
+    </p>
+    <pre>
+      countries = ["US", "Canada", "Mexico", "Costa Rica"]
+      even_numbers = [ 2, 4, 10, 46, 100]
+      random_array = ["cat", 456, [1, 2, 3], "blue", 6487589]
+    </pre>
+    <p>
+      Each array element has a position identifier with the first element indexed at 0, and subsequent elements are indexed sequentially by an increase of 1. However, array index can start at the end of an array using the reversed index. The last element is indexed at -1, the second to last element is indexed at -2, and so forth. This might sound confusing, so I provided some examples below so you can have some visuals to follow along. 
+    </p>
+    <pre>
+      array = [5, 7, 8, 10]
+      array[0] => 5
+      array[-4] => 5 (using reversed index)
+      array[0..2] => 5, 7, 8
+    </pre>
+    <p>
+      Hash, on the otherhand, is a collection of key-value pairs. Keys within a hash must be unique, but the restriction does not apply to values. Any Ruby objects can be used as a key or value, so integers, strings and arrays can be applied to hashes as well. 
+    </p>
+    <pre>
+      Hash syntax:
+
+      hash = {
+        key1 => value1,
+        key2 => value2,
+        key3 => value3
+      }
+    </pre>
+    <pre>
+      Examples of hashes:
+
+        animals = {
+          "cats" => 1,
+          "dog" => 2,
+          "bird" => 1
+        }
+
+        food = {
+          "japanese" => "sushi"
+          "indian" => "curry"
+          "italian" = "pasta"
+        }
+    </pre>
+    <p>
+      Unlike arrays, which use numbers for indexing, hashes can use arbitrary objects as their indexes. This means you can find the value relating to a specific key.
+    </p>
+    <pre>
+      food["japanese"] => "sushi"
+      food["italian"] => "pasta"
+    </pre>
+    <p>
+      However, the same technique will not work for locating a specific key by using the value.
+    </p>
+    <pre>
+      food["sushi"] does not give "japanese" 
+    </pre>
+</body>
