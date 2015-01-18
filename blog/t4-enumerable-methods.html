@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t4-enumerable-methods.css">
+</head>
+
+<div class="header">
+  <h1>Technical Blog</h1>
+</div>
+
+<body>
+  <img src = "../image/Seattle Pix.jpg">
+ 
+  <div class = "header">
+    <h1>Technical Blog</h1>
+  </div>
+
+  <div class = "navigation">
+    <a href="../index.html"><h2>HOME</h2></a>
+    <ul>
+      <li><a href="t1-git-blog.html">Week 1: Version Control, Git and Github</a></li>
+      <li><a href="t2-css-design.html">Week 2: Padding, Border and Margin</a></li>
+      <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
+      <li>Week 4: Map Method</li>
+    </ul>
+  </div>
+
+  <div class = "text">
+  <a id="week_1_post"><h1>Map Method</h1></a>
+  <h5>January 17, 2015</h5>
+    <p>As an object-oriented programming language, almost everything in Ruby is considered an object. With each object, there are built-in abilities called methods that tell the object what to do. For this post, I will be discussing the enumerable method, map. You maybe wondering what is an enumerable? Well, to give a simple answer, enumerable provides a way to sort and search through elements of the collection classes.  
+    </p> 
+
+    <p>
+     The map method takes an array or a range, and passes each element of the array or range through a block. From there, the new values returned from the block are output in a new array. The following examples demonstrate the map methods. 
+    </p>
+
+    <p>
+    Example 1:
+    </p>
+    <pre>
+    array = [1, 2, 3, 4, 5]
+
+    array.map <span>{|number| number + 10}</span>
+
+    output a new array: [11, 12, 13, 14, 15] 
+    </pre>
+    <p>
+    Example 2:
+    </p>
+    <pre>
+    range = 1..5
+
+    range.map <span>{|number| number + 10}</span>
+
+    output: [11, 12, 13, 14, 15]
+    </pre>  
+</body>
