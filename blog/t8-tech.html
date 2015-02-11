@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t7-JavaScript.css">
+</head>
+
+<div class="header">
+  <h1>Technical Blog</h1>
+</div>
+
+<body>
+  <img src = "../image/Seattle Pix.jpg">
+ 
+  <div class = "header">
+    <h1>Technical Blog</h1>
+  </div>
+
+  <div class = "navigation">
+    <a href="../index.html"><h2>HOME</h2></a>
+    <ul>
+      <li><a href="t1-git-blog.html">Week 1: Version Control, Git and Github</a></li>
+      <li><a href="t2-css-design.html">Week 2: Padding, Border and Margin</a></li>
+      <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
+      <li><a href="t4-enumerable-methods.html">Week 4: Map Method</a></li>
+      <li><a href="t5-ruby-classes.html">Week 5: Ruby Classes</a></li>
+      <li><a href="t6-oop-concepts.html">Week 6: Variable Scope</a></li>
+      <li><a href="t7-JavaScript.html">Week 7: Ruby Hashes vs. JavaScript Objects</a></li>
+      <li>Week 8: Regular Expressions</li>
+    </ul>
+  </div>
+
+  <div class = "text">
+  <a id="week_1_post"><h1>Regular Expressions</h1></a>
+  <h5>February 11, 2015</h5>
+    <p>
+    Regular Expressions, also known as regexp, is use to determine whether a specific string contains a given pattern. Regexp is usually distinguishable by the forward slashes (/). In the example below, we will try to locate the pattern 'peanut' within the string 'organic peanut butter'.
+    <p>
+    
+    <pre>
+    /peanut/ =~ 'organic peanut butter'
+    returns 8
+    </pre> 
+
+    <p>
+    By using =~, Ruby returns the index position of the first match that is found within the string. In the case of 'organic peanut butter', peanut starts at index position 8. If a match is not located, Ruby will return nil. 
+    </p>
+
+    <pre>
+    /peanut/.match('organic peanut butter')
+    returns MatchData "peanut"
+    </pre>
+
+    <p>
+    .match will return a MatchData followed by what was matched. In our case, Ruby returns the object, peanut. Similiar to =~, if no match is found, Ruby will return nil.
+    </p>
+
+    <p>
+    Ruby classifies the following as metacharacters: ( ) [ ] { } ? + * . In order to use metacharacters in regexp, back slashes are needed.
+    </p>
+
+    <pre>
+    /peanut\+butter/.match('organic+peanut+butter')
+    returns MatchData "peanut+butter"
+    </pre>
+
+    <p>
+    Square bracket ([ ]) are used within regexp for character class. Character class tells regexp that it has to match with only one of the characters listed. For example, [ae] tells Ruby to look in the string for either 'a' OR 'e'. In contrast, /ae/ tells Ruby that in order for a match to occurred,'a' must exist followed by 'e'.
+    </p>
+
+    <pre>
+    /[ae]/ =~ 'cat'
+    returns 1
+
+    /ae/ =~ 'cat'
+    returns nil
+    </pre>
+
+    <p>
+    In the example below, you can find a hyphen (-) in between the square brackets. The hyphen denotes a range, so [a-d] is the equivalent of [abcd].
+    </p>
+
+    <pre>
+    /[a-d]/ =~ 'robot'
+    returns 2
+
+    /[abcd]/ =~ 'robot'
+    returns 2
+    </pre>  
+</body>
