@@ -1,0 +1,11 @@
+body {
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 70px;
+}
+h1 {
+	text-align: center;
+	color: rgb(195, 44, 39);
+}

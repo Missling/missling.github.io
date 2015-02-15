@@ -40,6 +40,49 @@
   I would classify my friend as having a Type A personality, and most people would find her intimidating. If I could go back in time, I would have tried harder to rally all her friends and convince them to talk to her as well. They all shared the same feeling as myself, but they were too intimidated to express their opinions to her. In the end, I became the spokesperson on their behalf but unfortunately she did not take me seriously. This experience taught me to be appreciative and grateful for anyone that tries to help me.  
   </p>
   </div>
+  <article>
+<a href="http://raganwald.com/2014/01/19/prototypes-are-not-classes.html">Prototypes are not Classes</a>
+While some people might describe JavaScript's prototypes as the equivalent of Ruby's classes, the writer suggests otherwise in his article. Prototypes might share some similarites, but they are not the same as classes. The primary responsiblities of a Ruby's class is to 1) manufacture new objects 2) define the behavior of the objects they manufacture. Within JavaScript, a function is known as a constructor. When a constructor is used with the keyword, new, it makes a new object and initializes the new object with a prototype. The primary responsibilities of JavaScript's prototypes are 1) manufacturing new objects with constructor 2) using prototypes to define the behavior of new objects created by the constructor. The difference stems from the fact that within JavaScript, the methods of a phototype are the methods of the objects it defines, whereas within Ruby, class methods are specific to the business of being a class that are not shared by "original" objects.    
+</article>
+
+<article>
+<a href="http://sts10.github.io/blog/2014/05/16/javascript-prototypes-the-basic-basics/">JavaScript Prototypes: The Basic Basics</a>
+The writer, Sam Schlinkert, explores the basics of JavaScript protoypes while comparing prototypes to Ruby. His writing is more reader-friendly than the first article referenced. The following code was used by  Schlinkert used to explain prototypes. 
+
+<pre>
+var Animal = function (name, type, sound) {
+  this.name = name;
+  this.type = type;
+  this.sound = sound;
+};
+
+Animal.prototype = {
+  makeNoise: function () {
+    return this.sound + " is the sound that " + this.name + " makes!";
+  },
+  getWeightAtAge: function(age) {
+    if (this.type === "dog"){
+      return 5 * age;
+    } else if (this.type == "fish"){
+      return 2 * age;
+    } else {
+      return age;
+    }
+  },
+  toString: function () {
+    return this.name + " is a " + this.type;
+  }
+} 
+</pre>
+
+Schlinkert created a new variable called Animal, setting it equal to a function that takes the following parameters: name, type and sound. The purpose of the Animal function is to initialize methods of our prototype. Notice how JavaScript used "this"? Within JavaScript, "this" is the equivalent of Ruby's "self". JavaScript's initialize function goes outside the phototype, and contrary to JavaScript, Ruby's initialize method goes within the Ruby class. The three functions defined by Schlinkert, makeNoise, getWeightAtAge and toString, belong to the instances of the JavaScript objects.
+</article>
+
+
+<article>
+<a href="http://www.w3schools.com/js/js_object_prototypes.asp">JavaScript Prototypes</a>
+The above article explains how all JavaScript objects inherit their properties and methods from their prototype. The standard way to create an object prototype is to use an object constructor with the keyword, new. If a new property needed to be added to a constructor, the property must be added directly to the constructor function. 
+</article>
 
 <hr>
 
