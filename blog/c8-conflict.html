@@ -1,92 +1,125 @@
 <!DOCTYPE html>
-<head>
-  <title>Cultural Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<body>
-  <img src = "../image/San Diego Pix.jpg">
- 
-  <div class = "header">
-    <h1>Cultural Blog</h1>
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
+
+ <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
+
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <div class = "navigation">
-    <a href="../index.html"><h2>HOME</h2></a>
-    <ul>
-      <li><a href="c1-chefs-kitchen.html">Chef's Kitchen</a></li>
-      <li><a href="c3_thinking-style.html">Thinking Style and Learning</a></li>
-      <li><a href="c4-tech-issues.html">Women and the Tech Industry</a></li>
-      <li><a href="c5-feedback.html">Pair Programming</a></li>
-      <li><a href="c6-stereotype-threat.html">Stereotype Threat</a></li>
-      <li><a href="c7-values.html">Affirmation and Stereotype Threat</a></li>
-      <li>Conflict<li>
-    </ul>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-8 blog-main col-md-offset-2">
+        <div class="blog-post">
+          <h2>Conflict</h2>
+          <p class="blog-post-meta">February 12, 2015</p>
+          <p>
+          Going into my memory bank, the one conflict that sticks out to me took place years ago. My friend was living in Oakland at the time, and she found an apartment across the bay in San Francisco. She enlisted the help of her friends for the move. I advised my friend to rent a U-Haul truck, pointing to the fact that the U-Haul truck would allow us to complete the move in just a single trip across the bridge. Against my suggestion, she brought up the fact that she calculated the cost and it would be cheaper if she just rented a Zipcar pickup truck to move her bed. She was correct in that it would cost her less, but she failed to factor in the multiple trips her friends, who were nice enough to volunteer their weekend, would have to make multiple trips in their own cars to move her belongings. That meant multiple cars, multiple trips across bridge, multiple bridge tolls, and inefficient use of time and energy.
+          </p> 
+
+          <p>
+          I was furious at my friend for trying to offset her own cost through her friends. More importantly, since her friends and I were doing her a favor, I felt she should have been more considerate and did anything possible to make the move easier for us. This particular incident made me feel unappreciated and disrespected by my friend, especially with regards to my time and energy. Despite my biggest effort to convince my friend, breaking down the total cost of her plan and sharing my feelings, she still continue with her original plan.
+          </p> 
+
+          <p>
+          I would classify my friend as having a Type A personality, and most people would find her intimidating. If I could go back in time, I would have tried harder to rally all her friends and convince them to talk to her as well. They all shared the same feeling as myself, but they were too intimidated to express their opinions to her. In the end, I became the spokesperson on their behalf but unfortunately she did not take me seriously. This experience taught me to be appreciative and grateful for anyone that tries to help me.  
+          </p>
+        </div>  
+      </div>
+    </div>
   </div>
-
-  <div class = "text">
-  <a><h1>Conflict</h1></a>
-  <h5>February 12, 2015</h5>
-  <p>
-  Going into my memory bank, the one conflict that sticks out to me took place years ago. My friend was living in Oakland at the time, and she found an apartment across the bay in San Francisco. She enlisted the help of her friends for the move. I advised my friend to rent a U-Haul truck, pointing to the fact that the U-Haul truck would allow us to complete the move in just a single trip across the bridge. Against my suggestion, she brought up the fact that she calculated the cost and it would be cheaper if she just rented a Zipcar pickup truck to move her bed. She was correct in that it would cost her less, but she failed to factor in the multiple trips her friends, who were nice enough to volunteer their weekend, would have to make multiple trips in their own cars to move her belongings. That meant multiple cars, multiple trips across bridge, multiple bridge tolls, and inefficient use of time and energy.
-  </p> 
-
-  <p>
-  I was furious at my friend for trying to offset her own cost through her friends. More importantly, since her friends and I were doing her a favor, I felt she should have been more considerate and did anything possible to make the move easier for us. This particular incident made me feel unappreciated and disrespected by my friend, especially with regards to my time and energy. Despite my biggest effort to convince my friend, breaking down the total cost of her plan and sharing my feelings, she still continue with her original plan.
-  </p> 
-
-  <p>
-  I would classify my friend as having a Type A personality, and most people would find her intimidating. If I could go back in time, I would have tried harder to rally all her friends and convince them to talk to her as well. They all shared the same feeling as myself, but they were too intimidated to express their opinions to her. In the end, I became the spokesperson on their behalf but unfortunately she did not take me seriously. This experience taught me to be appreciative and grateful for anyone that tries to help me.  
-  </p>
-  </div>
-  <article>
-<a href="http://raganwald.com/2014/01/19/prototypes-are-not-classes.html">Prototypes are not Classes</a>
-While some people might describe JavaScript's prototypes as the equivalent of Ruby's classes, the writer suggests otherwise in his article. Prototypes might share some similarites, but they are not the same as classes. The primary responsiblities of a Ruby's class is to 1) manufacture new objects 2) define the behavior of the objects they manufacture. Within JavaScript, a function is known as a constructor. When a constructor is used with the keyword, new, it makes a new object and initializes the new object with a prototype. The primary responsibilities of JavaScript's prototypes are 1) manufacturing new objects with constructor 2) using prototypes to define the behavior of new objects created by the constructor. The difference stems from the fact that within JavaScript, the methods of a phototype are the methods of the objects it defines, whereas within Ruby, class methods are specific to the business of being a class that are not shared by "original" objects.    
-</article>
-
-<article>
-<a href="http://sts10.github.io/blog/2014/05/16/javascript-prototypes-the-basic-basics/">JavaScript Prototypes: The Basic Basics</a>
-The writer, Sam Schlinkert, explores the basics of JavaScript protoypes while comparing prototypes to Ruby. His writing is more reader-friendly than the first article referenced. The following code was used by  Schlinkert used to explain prototypes. 
-
-<pre>
-var Animal = function (name, type, sound) {
-  this.name = name;
-  this.type = type;
-  this.sound = sound;
-};
-
-Animal.prototype = {
-  makeNoise: function () {
-    return this.sound + " is the sound that " + this.name + " makes!";
-  },
-  getWeightAtAge: function(age) {
-    if (this.type === "dog"){
-      return 5 * age;
-    } else if (this.type == "fish"){
-      return 2 * age;
-    } else {
-      return age;
-    }
-  },
-  toString: function () {
-    return this.name + " is a " + this.type;
-  }
-} 
-</pre>
-
-Schlinkert created a new variable called Animal, setting it equal to a function that takes the following parameters: name, type and sound. The purpose of the Animal function is to initialize methods of our prototype. Notice how JavaScript used "this"? Within JavaScript, "this" is the equivalent of Ruby's "self". JavaScript's initialize function goes outside the phototype, and contrary to JavaScript, Ruby's initialize method goes within the Ruby class. The three functions defined by Schlinkert, makeNoise, getWeightAtAge and toString, belong to the instances of the JavaScript objects.
-</article>
-
-
-<article>
-<a href="http://www.w3schools.com/js/js_object_prototypes.asp">JavaScript Prototypes</a>
-The above article explains how all JavaScript objects inherit their properties and methods from their prototype. The standard way to create an object prototype is to use an object constructor with the keyword, new. If a new property needed to be added to a constructor, the property must be added directly to the constructor function. 
-</article>
-
-<hr>
-
-  <div class = "footer">
-    Created by Ling Giang</h4>
-  </div>
-</body>
+  
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

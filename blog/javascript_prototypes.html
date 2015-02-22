@@ -1,85 +1,199 @@
+
+	
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>JS Prototypes</title>
-		<link rel="stylesheet" type="text/css" href="javascript_prototypes.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-	</head>
-	<body>
-		<h1>JavaScript Prototypes</h1>
-		<img src="../image/prototype_chain.jpeg" alt="Picture">
-		<p>
-			Prototypes are pretty confusing thing in JavaScript, but like everything else in programming, one needs to understand them. Creating this page was a pairing challenge and neither me or my pair knew much about prototypes going in. We had to do quite a research to create a whole page dedicated especially to this subject. In our search for the truth about prototypes we came to realisation that they are crucial when we would like to implement inheritance. 
-		</p>
-		<p>
-			When we look at language like Ruby, where inheritance is a link between classes, everything seems pretty straight forward. Create first class, put some methods in, and when creating another class, make it 'less than' first one and the second class gets all the methods from the first one. 
-		</p>
-		<p>
-			This isn't so easy in JavaScript, and the main reason is that it doesn't have classes, it only has objects. And objects in JavaScript mostly have property/value pairs, and not only methods like in Ruby. What we need to do to inherit this values or methods from object1 to object2 is to use a special '__proto__' object.
-		</p>
-		<p>
-			So how it works?
-		</p>
-		<pre class="prettyprint">
-	<code>object2.__proto__ = object1;</code></pre>
-		<p>
-			Would make object2 get everything object1 has. 
-		</p>
-		<p>
-			There's another way to inherit from object, and this one is more recommended as '__proto__' isn't part of standard interface of JavaScript. We can assign our object to inherit right at the creation of it. Like so:
-		</p>
-		<pre class="prettyprint">
-	<code>var object2 = Object.create(object1);</code></pre>
-		<p>
-			This achieves the same effect as previous example.
-		</p>
-		<p>
-			There are many pages that explain this concept in detail, and they explain it very well. We gathered some for you to have a look if you're intersted in it.
-		</p>		
-		<article>
-			<h3><a href="http://raganwald.com/2014/01/19/prototypes-are-not-classes.html">Prototypes are not Classes</a></h2>
-			While some people might describe JavaScript's prototypes as the equivalent of Ruby's classes, the writer suggests otherwise in his article. Prototypes might share some similarites, but they are not the same as classes. The primary responsiblities of a Ruby's class is to:<br>1) manufacture new objects<br>
-			2) define the behavior of the objects they manufacture<br>
-			Within JavaScript, a function is known as a constructor. When a constructor is used with the keyword <code>new</code> it makes a new object and initializes the new object with a prototype. The primary responsibilities of JavaScript's prototypes are:<br>
-			1) manufacturing new objects with constructor<br>
-			2) using prototypes to define the behavior of new objects created by the constructor<br>
-			The difference stems from the fact that within JavaScript, the methods of a prototype are the methods of the objects it defines, whereas within Ruby, class methods are specific to the business of being a class that are not shared by "original" objects.    
-		</article>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-		<article>
-			<h3><a href="http://sts10.github.io/blog/2014/05/16/javascript-prototypes-the-basic-basics/">JavaScript Prototypes: The Basic Basics</a></h3>
-			The writer, Sam Schlinkert, explores the basics of JavaScript protoypes while comparing prototypes to Ruby. His writing is more reader-friendly than the first article referenced. The following code was used by  Schlinkert used to explain prototypes. 
-		<pre class="prettyprint">
-	<code>var Animal = function (name, type, sound) {
-	  this.name = name;
-	  this.type = type;
-	  this.sound = sound;
-	};
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
 
-	Animal.prototype = {
-	  makeNoise: function () {
-	    return this.sound + " is the sound that " + this.name + " makes!";
-	  },
-	  getWeightAtAge: function(age) {
-	    if (this.type === "dog"){
-	      return 5 * age;
-	    } else if (this.type == "fish"){
-	      return 2 * age;
-	    } else {
-	      return age;
-	    }
-	  },
-	  toString: function () {
-	    return this.name + " is a " + this.type;
-	  }
-	}</code></pre>
+<div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
 
-			Schlinkert created a new variable called Animal, setting it equal to a function that takes the following parameters: name, type and sound. The purpose of the Animal function is to initialize methods of our prototype. Notice how JavaScript used <code>this</code>? Within JavaScript, <code>this</code> is the equivalent of Ruby's <code>self</code>. JavaScript's initialize function goes outside the phototype, and contrary to JavaScript, Ruby's initialize method goes within the Ruby class. The three functions defined by Schlinkert, <code>makeNoise</code>, <code>getWeightAtAge</code> and <code>toString</code>, belong to the instances of the JavaScript objects.
-		</article>
-		<article>
-			<h3><a href="http://www.w3schools.com/js/js_object_prototypes.asp">JavaScript Prototypes</a></h3>
-			The above article explains how all JavaScript objects inherit their properties and methods from their prototype. The standard way to create an object prototype is to use an object constructor with the keyword, new. If a new property needed to be added to a constructor, the property must be added directly to the constructor function. 
-		</article>		
-	</body>
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-10 blog-main col-md-offset-1">
+        <div class="blog-post">
+          <h2>JavaScript Prototypes</h2>
+    
+      <body>
+        <!-- <img class="prototype_center" src="../image/prototype_chain.jpeg" alt="Picture"> -->
+        <p>
+          Prototypes are pretty confusing thing in JavaScript, but like everything else in programming, one needs to understand them. Creating this page was a pairing challenge and neither my partner nor myself knew much about prototypes going in. We had to do some research to create a whole page dedicated to this subject. In our search for the truth about prototypes, we came to realisation that they are crucial. 
+        </p>
+        <p>
+          When we look at a language like Ruby where inheritance is a link between classes, everything seems pretty straight forward. Create the first class and put some methods in it. When creating another class, make it 'less than' the first one and the second class gets all the methods from the first one. 
+        </p>
+        <p>
+          This isn't so easy in JavaScript, and the main reason is that it doesn't have classes, it only has objects. And objects in JavaScript mostly have property/value pairs, and not only methods like in Ruby. What we need to do to inherit this values or methods from object1 to object2 is to use a special '__proto__' object.
+        </p>
+        <p>
+          So how does it works?
+        </p>
+        <pre class="prettyprint">
+      <code>object2.__proto__ = object1;</code></pre>
+        <p>
+          Would makes object2 get everything object1 has. 
+        </p>
+        <p>
+          There's another way to inherit from object, and this one is more recommended as '__proto__' isn't part of standard interface of JavaScript. We can assign our object to inherit right at the creation of it. Like so:
+        </p>
+        <pre class="prettyprint">
+      <code>var object2 = Object.create(object1);</code></pre>
+        <p>
+          This achieves the same effect as previous example.
+        </p>
+        <p>
+          There are many pages that explain this concept in detail, and they explain it very well. We gathered some for you to have a look if you're intersted in it.
+        </p>    
+        
+          <h3><a href="http://raganwald.com/2014/01/19/prototypes-are-not-classes.html">Prototypes are not Classes</a></h2>
+        <p>
+          While some people might describe JavaScript's prototypes as the equivalent of Ruby's classes, the writer suggests otherwise in his article. Prototypes might share some similarites, but they are not the same as classes. The primary responsiblities of a Ruby's class is to:<br>1) manufacture new objects<br>
+          2) define the behavior of the objects they manufacture<br>
+          Within JavaScript, a function is known as a constructor. When a constructor is used with the keyword <code>new</code> it makes a new object and initializes the new object with a prototype. The primary responsibilities of JavaScript's prototypes are:<br>
+          1) manufacturing new objects with constructor<br>
+          2) using prototypes to define the behavior of new objects created by the constructor<br>
+          The difference stems from the fact that within JavaScript, the methods of a prototype are the methods of the objects it defines, whereas within Ruby, class methods are specific to the business of being a class that are not shared by "original" objects.    
+        </p>
+
+        
+          <h3><a href="http://sts10.github.io/blog/2014/05/16/javascript-prototypes-the-basic-basics/">JavaScript Prototypes: The Basic Basics</a></h3>
+        <p>
+          The writer, Sam Schlinkert, explores the basics of JavaScript protoypes while comparing prototypes to Ruby. His writing is more reader-friendly than the first article referenced. The following code was used by  Schlinkert used to explain prototypes.
+        </p>
+
+        <pre class="prettyprint">
+        <code>var Animal = function (name, type, sound) {
+          this.name = name;
+          this.type = type;
+          this.sound = sound;
+        };
+
+        Animal.prototype = {
+          makeNoise: function () {
+            return this.sound + " is the sound that " + this.name + " makes!";
+          },
+          getWeightAtAge: function(age) {
+            if (this.type === "dog"){
+              return 5 * age;
+            } else if (this.type == "fish"){
+              return 2 * age;
+            } else {
+              return age;
+            }
+          },
+          toString: function () {
+            return this.name + " is a " + this.type;
+          }
+        }</code></pre>
+
+          <p>
+            Schlinkert created a new variable called Animal, setting it equal to a function that takes the following parameters: name, type and sound. The purpose of the Animal function is to initialize methods for our prototype. Notice how JavaScript used <code>this</code>? Within JavaScript, <code>this</code> is the equivalent of Ruby's <code>self</code>. JavaScript's initialize function goes outside the prototype, and contrary to JavaScript, Ruby's initialize method goes within the Ruby class. The three functions defined by Schlinkert, <code>makeNoise</code>, <code>getWeightAtAge</code> and <code>toString</code>, belong to the instances of the JavaScript objects.
+          </p>
+
+          
+            <h3><a href="http://www.w3schools.com/js/js_object_prototypes.asp">JavaScript Prototypes</a></h3>
+          <p>
+            The above article explains how all JavaScript objects inherit their properties and methods from their prototype. The standard way to create an object prototype is to use an object constructor with the keyword, new. If a new property needed to be added to a constructor, the property must be added directly to the constructor function. 
+          </p>
+        </body>
+        </div>
+      </div>
+    </div>      
+  </div>
+
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
 </html>

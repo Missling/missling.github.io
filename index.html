@@ -1,52 +1,127 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <title>My Journey into the World of Code</title>
-    <link type="text/css" rel="stylesheet" href="stylesheets/index-site.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/index_bootstrap.css" rel="stylesheet">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-<header>
-  <h1>My <span>Journey</span> into the <span>World of Code</span></h1>
-</header>
+  <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
 
-<hr>
-<hr>
-
-<body>
-  <section class="left">
-    <h2>Projects</h2>
-      <h3>Project #1: This website</h3>
-        <p> For this week project, I created my very own website from scratch without relying on a front-end framework such as Bootstrap. Prior to this project, my only exposure to HTML/CSS was completing the course on Codecademy. Because Codecademy taught HTML4, I had to read up on the new semantic elements that were introduced in HTML5. 
-        <p> To begin this project, I learned about the differences between an UX Designer and UI Designer, which taught me how complicated the design process actually is. I started the project by creating a sitemap. From there, I wireframed the layout of my future website and with a little HTML/CSS magic, I turned my wireframe into a living, working website. During this process, my biggest struggle was working with CSS positioning. Luckily, I was introduced to Chrome DevTools, which became an invaluable tools for myself to edit elements and help me with my toughest challenge, CSS positioning. Although most of my website was created by myself, the template for my blog was actually the result of a pair-programming session. I had a great partner, which lead to a a fantastic pairing experience. I can now see why Dev Bootcamp place such a strong emphasis on pair-programming. My website is far from complete, but I plan on growing my website as I continue to learn more about HTML/CSS and programming in general.</p>
-  
-    <h2>Interesting Coding Tidbit</h2>
-      <p class="date">12.25.2014</p>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/8bZh5LMaSmE" frameborder="0" allowfullscreen></iframe>
-      <p class="date">12.29.2014</p>
-      <p>
-      I came across this <a href="http://studio.code.org/s/frozen/stage/1/puzzle/1">educational game</a> that introduce programming to children in a way that is not only informative, but entertaining. Within the game, players can control the beloved characters of Frozen through the use of Blockly. Since the game centers around Princess Elsa and Princess Anna, the game appeals to girls, which is a step towards the right direction in getting more girls interested in programming.    
-      </p>
-  </section>   
-
-  <section class="right">
-    <img id="profile" src="image/Ling's Profile Pix Resized.jpg" alt="Profile Picture">
-    <h3>About me:</h3>
-      <p id="me">A Bay Area native that stumbled upon coding by sheer luck more than a year ago. Since then, I have fell in love and was fortunate enough to be accepted into Dev Bootcamp's 2015 cohort. Come join me on my adventure as I dive into the world of code, taking one loop at a time, all the while trying to avoid the dreaded infinite loop. My dream is to break barrier and transition from my current profession, finance, to the male-dominated industry that is tech. </p>
-  
-    
-    <a href="https://github.com/missling"><img src="image/github.png" alt="Github"></a>
-    <a href="http://www.linkedin.com/in/LingGiang"><img src="image/linkedin.gif" alt="Linkedin"></a>
-    <a href="https://twitter.com/LC_Giang"><img src="image/twitter.png" alt="Twitter"></a>
-    <ul>
-      <li><a href="http://missling.github.io/blog/index-site.html">Blogs</a></li>
-      <li><a href="mailto:ling.giang@gmail.com">Contact Me</a></li> 
+  <div class="masthead">
+  <nav>
+    <ul class="nav nav-justified">
+      <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          Technical Blog <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="blog/t1-git-blog.html">Version Control, Git and Github</a>
+          </li>
+          <li>
+            <a href="blog/t2-css-design.html">Padding, Border and Margin</a>
+          </li>
+          <li>
+            <a href="blog/t3-arrays-hashes.html">Arrays and Hashes</a>
+          </li>
+          <li>
+            <a href="blog/t4-enumerable-methods.html">Map Method</a>
+          </li>
+          <li>
+            <a href="blog/t5-ruby-classes.html">Ruby Classes</a>
+          </li>
+          <li>
+            <a href="blog/t6-oop-concepts.html">Variable Scope</a>
+          </li>
+          <li>
+            <a href="blog/t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+          </li>
+          <li>
+            <a href="blog/t8-tech.html">Regular Expressions</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          Cultural Blog <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="blog/c1-chefs-kitchen.html">Chef's Kitchen</a>
+          </li>
+          <li>
+            <a href="blog/c3_thinking-style.html">Thinking Style and Learning</a>
+          </li>
+          <li>
+            <a href="blog/c4-tech-issues.html">Women and the Tech Industry</a>
+          </li>
+          <li>
+            <a href="blog/c5-feedback.html">Pair Programming</a>
+          </li>
+          <li>
+            <a href="blog/c6-stereotype-threat.html">Stereotype Threat</a>
+          </li>
+          <li>
+            <a href="blog/c7-values.html">Affirmation and Stereotype</a>
+          </li>
+          <li>
+            <a href="blog/c8-conflict.html">Conflict</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="blog/javascript_prototypes.html">JavaScript Prototypes</a>
+          </li>  
+        </ul>
+      </li>
+      <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
     </ul>
-  </section>
-</body>
+  </nav>
+  </div>
 
-<footer>
-  <p>Website created by Ling Giang</p>
-</footer>
+  <section class="row">
+    <section class="col-md-3">
+      <img id="profile_picture" src="image/Ling's Profile Pix Resized.jpg" alt="Profile Picture" class="img-rounded center-block">
+    </section>
+
+    <section class="col-md-9">
+      <p id="about_me">
+        A Bay Area native that stumbled upon coding by sheer luck more than a year ago. Since then, I have fell in love and was fortunate enough to be accepted into Dev Bootcamp's 2015 cohort. Come join me on my adventure as I dive into the world of code, taking one loop at a time, all the while trying to avoid the dreaded infinite loop. My dream is to break barrier and transition from my current profession, finance, to the male-dominated industry that is tech.
+      </p>
+      <p>
+        <a href="https://github.com/missling"><img src="image/github.png" alt="Github"></a>
+        <a href="http://www.linkedin.com/in/LingGiang"><img src="image/linkedin.gif" alt="Linkedin"></a>
+        <a href="https://twitter.com/LC_Giang"><img src="image/twitter.png" alt="Twitter"></a>
+        </p>  
+    </section>  
+  </section>
+  </div>
+  <section class="container">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
+  </section>
 </html>

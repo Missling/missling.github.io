@@ -1,50 +1,124 @@
 <!DOCTYPE html>
-<head>
-  <title>Technical Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/t1-git-blog.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<body>
-  <img src = "../image/Seattle Pix.jpg">
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
 
-  <div class="header">
-    <h1>Technical Blog</h1>
+ <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
+
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <div class = "navigation">
-    <a href="../index.html"><h2>HOME</h2></a>
-    <ul>
-      <li>Week 1: Version Control, Git and Github</li>
-      <li><a href="t2-css-design.html">Week 2: Padding, Border and Margin</a></li>
-      <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
-      <li><a href="t4-enumerable-methods.html">Week 4: Map Method</a></li>
-      <li><a href="t5-ruby-classes.html">Week 5: Ruby Classes</a></li>
-      <li><a href="t6-oop-concepts.html">Week 6: Variable Scope</li>
-      <li><a href="t7-JavaScript.html">Week 7: Ruby Hashes vs. JavaScript Objects</a></li>
-      <li><a href="t8-tech.html">Week 8: Regular Expressions</a></li>
-    </ul>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-8 blog-main col-md-offset-2">
+        <div class="blog-post">
+          <h2>Version Control, Git and Github</h2>
+          <p class="blog-post-meta">December 13, 2014</p>
+          <p>
+            Version control is an essential tool that allows programmers the ability to save copies of their files at a particular point-in-time. In doing so, programmers can maintain a running revision history, granting them accessibility to past versions of their files. This optimizes the debugging process by allowing programmers a way to pin-point the exact version that the bug was introduced. Programmers can then revert back to working on a previous, bug free version. To make the subject of version control more relatable to a non-programmers, version control can be applied to the context of video game. Prior to fighting the boss, players can save their current position in the game as a security measure. In the event that the player does die during battle, the player can continue playing from the last location they saved prior to the fight.
+          </p>
+          <p>
+            Git is a version control system that tracks changes by allowing users to save contents of their files locally, at it's current state. This is achieved through <code>git add</code>. <code>git add</code> tells Git to turn modified files and new file that the users want to save into tracked files. From there, tracked files can be saved with <code>git commit -m "message"</code>. By repeating the above steps, multiple versions of a file are saved, which creates a revision history showcasing the changes made to the code.
+          </p>
+          <p>
+            Github is important to the coding community because it provides a place where programmers can store their projects, Git repositories, remotely on the internet.
+            Github's user-friendly platform allows programmers to easily view, compare and merge commits. The pull request feature on Github simplifies the merging process by allowing others to review, comment and approve code updates before being merged.
+          </p>
+        </div>  
+      </div>
+    </div>
   </div>
-
-  <div class = "text">
-  <a id="week_1_post"><h1>Version Control, Git and Github</h1></a>
-  <h5>December 13, 2014</h5>
-    <p>
-      Version control is an essential tool that allows programmers the ability to save copies of their files at a particular point-in-time. In doing so, programmers can maintain a running revision history, granting them accessibility to past versions of their files. This optimizes the debugging process by allowing programmers a way to pin-point the exact version that the bug was introduced. Programmers can then revert back to working a previous, bug free version. To make the subject of version control more relatable to a non-programmer audience, version control can be applied to the context of video game. Prior to fighting the boss, players can save their current position in the game as a security measure. In the event that the player does die during battle, the player can continue playing from the last location they saved prior to the fight.
-    </p>
-    <p>
-      Git is a version control system that tracks changes by allowing users to save contents of their files locally, at it's current state. This is achieved through </span>git add</span>. <span>Git add</span> tells Git to turn modified files and new file that the users want to save into tracked files. From there, tracked files can be saved with <span>git commit -m "message"</span>. By repeating the above steps, multiple versions of a file are saved, which creates a revision history showcasing the changes made to the code.
-    </p>
-    <p>
-      Github is important to the coding community because it provides a place where programmers can store their projects, Git repositories, remotely on the internet.
-      Github's user-friendly platform allows programmers to easily view, compare and merge commits. The pull request feature on Github simplifies the merging process by allowing others to review, comment and approve code updates before being merged.
-    </p>
-  </div>
-
-<hr>
-
-  <div class = "footer">
-    <h4>Created by Ling Giang</h4>
-  </div>
-</body>
+  
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

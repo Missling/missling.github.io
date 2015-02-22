@@ -1,89 +1,165 @@
 <!DOCTYPE html>
-<head>
-  <title>Technical Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/t4-enumerable-methods.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<div class="header">
-  <h1>Technical Blog</h1>
-</div>
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
 
-<body>
-  <img src = "../image/Seattle Pix.jpg">
- 
-  <div class = "header">
-    <h1>Technical Blog</h1>
+ <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
+
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <div class = "navigation">
-    <a href="../index.html"><h2>HOME</h2></a>
-    <ul>
-      <li><a href="t1-git-blog.html">Week 1: Version Control, Git and Github</a></li>
-      <li><a href="t2-css-design.html">Week 2: Padding, Border and Margin</a></li>
-      <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
-      <li><a href="t4-enumerable-methods.html">Week 4: Map Method</a></li>
-      <li>Week 5: Ruby Classes</li>
-      <li><a href="t6-oop-concepts.html">Week 6: Variable Scope</li>
-      <li><a href="t7-JavaScript.html">Week 7: Ruby Hashes vs. JavaScript Objects</a></li>
-      <li><a href="t8-tech.html">Week 8: Regular Expressions</a></li>
-    </ul>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-8 blog-main col-md-offset-2">
+        <div class="blog-post">
+          <h2>Ruby Classes</h2>
+          <p class="blog-post-meta">January 24, 2015</p>
+          <p> 
+        Today I will go over an important component of Ruby, classes. When I first started learning about classes, classes were explained to me as being factories within the Ruby language. Inside these factories, objects can be built and these objects are referred to as being ‘instances of the class’. Here we have a Car class, with attributes of make and model:  
+        <pre>
+        class Car
+          def initialize(make, model)
+            @make = make
+            @model = model
+          end
+        end
+        </pre> 
+        </p>
+        
+        <p>
+        Our goal is to make a new instance of the Car class. This is achieved by calling .new on our class and defining it’s make and model. .new actually calls the initialize method, which takes the make and model as it’s parameters and sets them as the attributes of your new car object.
+        <pre>
+        car_1 = Car.new (“Honda”, “Civic”)
+        </pre>
+        
+        <p>
+        Within a class there can be methods that interact with the class object. Let’s create a method to that will paint our car object a specific color.
+        <pre>
+        def car_color(color)
+          “Spraying your car #{color} color.”
+        end
+        </pre>
+        To call our method on car_1:
+        <pre>
+        p car_1.car_color(“blue”) #=> “Spraying your car blue color”
+        </pre>
+        </p>
+        
+        <p>
+        The method, car_color, is an instance method. As an instance method it can only be used after an instance of the class was created with the initialize method. From there, you can access the method by calling the method on the instance of the class that is created, in our case it would be car_1. 
+        </p>
+
+        <p>
+        Going back to our initialize method, notice there are @ in front of the make and model. This means that make and model are actually instance variables, and instance variables are available to every method of the class. As instance variables, this is why make and model are accessible in the car_color method.  
+        </p>
+
+        <p>
+        On the other hand, there are local variables. Local variables are only available inside the method it is defined, and not shared across the entire class. In our car_color method, color is a local variable, which means it can not be accessed outside the method. To turn color into an instance variable, I can do the following:
+        </p>
+        <pre>
+        def car_color(color)
+          @color = color
+          “Spraying your car #{@color} color.”
+        end
+        </pre>
+        <p>
+        As @color, now it can be access outside of the car_color method. 
+        </p>
+        </div>  
+      </div>
+    </div>
   </div>
-
-  <div class = "text">
-  <a id="week_1_post"><h1>Ruby Classes</h1></a>
-  <h5>January 24, 2015</h5>
-    <p> 
-    Today I will go over an important component of Ruby, classes. When I first started learning about classes, classes were explained to me as being factories within the Ruby language. Inside these factories, objects can be built and these objects are referred to as being ‘instances of the class’. Here we have a Car class, with attributes of make and model:  
-    <pre>
-    class Car
-      def initialize(make, model)
-        @make = make
-        @model = model
-      end
-    end
-    </pre> 
-    </p>
-    
-    <p>
-    Our goal is to make a new instance of the Car class. This is achieved by calling .new on our class and defining it’s make and model. .new actually calls the initialize method, which takes the make and model as it’s parameters and sets them as the attributes of your new car object.
-    <pre>
-    car_1 = Car.new (“Honda”, “Civic”)
-    </pre>
-    
-    <p>
-    Within a class there can be methods that interact with the class object. Let’s create a method to that will paint our car object a specific color.
-    <pre>
-    def car_color(color)
-      “Spraying your car #{color} color.”
-    end
-    </pre>
-    To call our method on car_1:
-    <pre>
-    p car_1.car_color(“blue”) #=> “Spraying your car blue color”
-    </pre>
-    </p>
-    
-    <p>
-    The method, car_color, is an instance method. As an instance method it can only be used after an instance of the class was created with the initialize method. From there, you can access the method by calling the method on the instance of the class that is created, in our case it would be car_1. 
-    </p>
-
-    <p>
-    Going back to our initialize method, notice there are @ in front of the make and model. This means that make and model are actually instance variables, and instance variables are available to every method of the class. As instance variables, this is why make and model are accessible in the car_color method.  
-    </p>
-
-    <p>
-    On the other hand, there are local variables. Local variables are only available inside the method it is defined, and not shared across the entire class. In our car_color method, color is a local variable, which means it can not be accessed outside the method. To turn color into an instance variable, I can do the following:
-    </p>
-    <pre>
-    def car_color(color)
-      @color = color
-      “Spraying your car #{@color} color.”
-    end
-    </pre>
-    <p>
-    As @color, now it can be access outside of the car_color method. 
-    </p>
-   
-</body>
+  
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

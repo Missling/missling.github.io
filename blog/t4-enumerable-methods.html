@@ -1,64 +1,142 @@
 <!DOCTYPE html>
-<head>
-  <title>Technical Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/t4-enumerable-methods.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<div class="header">
-  <h1>Technical Blog</h1>
-</div>
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
 
-<body>
-  <img src = "../image/Seattle Pix.jpg">
- 
-  <div class = "header">
-    <h1>Technical Blog</h1>
+ <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
+
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <div class = "navigation">
-    <a href="../index.html"><h2>HOME</h2></a>
-    <ul>
-      <li><a href="t1-git-blog.html">Week 1: Version Control, Git and Github</a></li>
-      <li><a href="t2-css-design.html">Week 2: Padding, Border and Margin</a></li>
-      <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
-      <li>Week 4: Map Method</li>
-      <li><a href="t5-ruby-classes.html">Week 5: Ruby Classes</a></li>
-      <li><a href="t6-oop-concepts.html">Week 6: Variable Scope</li>
-      <li><a href="t7-JavaScript.html">Week 7: Ruby Hashes vs. JavaScript Objects</a></li>
-      <li><a href="t8-tech.html">Week 8: Regular Expressions</a></li>
-    </ul>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-8 blog-main col-md-offset-2">
+        <div class="blog-post">
+          <h2>Map Method</h2>
+          <p class="blog-post-meta">January 17, 2015</p>
+          <p>As an object-oriented programming language, almost everything in Ruby is considered an object. With each object, there are built-in abilities called methods that tell the object what to do. For this post, I will be discussing the enumerable method, map. You maybe wondering what is an enumerable? Well, to give a simple answer, enumerable provides a way to sort and search through elements of the collection classes.  
+        </p> 
+
+        <p>
+         The map method takes an array or a range, and passes each element of the array or range through a block. From there, the new values returned from the block are output in a new array. The following examples demonstrate the map methods. 
+        </p>
+
+        <p>
+        Example 1:
+        </p>
+
+        <pre>
+        array = [1, 2, 3, 4, 5]
+
+        array.map <span>{|number| number + 10}</span>
+
+        output a new array: [11, 12, 13, 14, 15] 
+        </pre>
+        <p>
+        Example 2:
+        </p>
+        <pre>
+        range = 1..5
+
+        range.map <span>{|number| number + 10}</span>
+
+        output: [11, 12, 13, 14, 15]
+        </pre> 
+        </div>  
+      </div>
+    </div>
   </div>
-
-  <div class = "text">
-  <a id="week_1_post"><h1>Map Method</h1></a>
-  <h5>January 17, 2015</h5>
-    <p>As an object-oriented programming language, almost everything in Ruby is considered an object. With each object, there are built-in abilities called methods that tell the object what to do. For this post, I will be discussing the enumerable method, map. You maybe wondering what is an enumerable? Well, to give a simple answer, enumerable provides a way to sort and search through elements of the collection classes.  
-    </p> 
-
-    <p>
-     The map method takes an array or a range, and passes each element of the array or range through a block. From there, the new values returned from the block are output in a new array. The following examples demonstrate the map methods. 
-    </p>
-
-    <p>
-    Example 1:
-    </p>
-    <pre>
-    array = [1, 2, 3, 4, 5]
-
-    array.map <span>{|number| number + 10}</span>
-
-    output a new array: [11, 12, 13, 14, 15] 
-    </pre>
-    <p>
-    Example 2:
-    </p>
-    <pre>
-    range = 1..5
-
-    range.map <span>{|number| number + 10}</span>
-
-    output: [11, 12, 13, 14, 15]
-    </pre>  
-</body>
+  
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

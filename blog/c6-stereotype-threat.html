@@ -1,49 +1,125 @@
 <!DOCTYPE html>
-<head>
-  <title>Cultural Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-<body>
-  <img src = "../image/San Diego Pix.jpg">
- 
-  <div class = "header">
-    <h1>Cultural Blog</h1>
+    <!-- Bootstrap -->
+    <link href="../stylesheets/index_bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/blog.css" rel="stylesheet">  
+  </head>
+
+ <div class="container">
+  <header class="jumbotron">
+    <h1>My Journey into the World of Code<h1>
+  </header>
+
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified">
+        <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Technical Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="t1-git-blog.html">Version Control, Git and Github</a>
+            </li>
+            <li>
+              <a href="t2-css-design.html">Padding, Border and Margin</a>
+            </li>
+            <li>
+              <a href="t3-arrays-hashes.html">Arrays and Hashes</a>
+            </li>
+            <li>
+              <a href="t4-enumerable-methods.html">Map Method</a>
+            </li>
+            <li>
+              <a href="t5-ruby-classes.html">Ruby Classes</a>
+            </li>
+            <li>
+              <a href="t6-oop-concepts.html">Variable Scope</a>
+            </li>
+            <li>
+              <a href="t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a>
+            </li>
+            <li>
+              <a href="t8-tech.html">Regular Expressions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Cultural Blog <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="c1-chefs-kitchen.html">Chef's Kitchen</a>
+            </li>
+            <li>
+              <a href="c3_thinking-style.html">Thinking Style and Learning</a>
+            </li>
+            <li>
+              <a href="c4-tech-issues.html">Women and the Tech Industry</a>
+            </li>
+            <li>
+              <a href="c5-feedback.html">Pair Programming</a>
+            </li>
+            <li>
+              <a href="c6-stereotype-threat.html">Stereotype Threat</a>
+            </li>
+            <li>
+              <a href="c7-values.html">Affirmation and Stereotype</a>
+            </li>
+            <li>
+              <a href="c8-conflict.html">Conflict</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Cheat Sheet <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="../blog/javascript_prototypes.html">JavaScript Prototypes</a>
+            </li>  
+          </ul>
+        </li>
+        <li ><a href="mailto:ling.giang@gmail.com">Contact Me</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <div class = "navigation">
-    <a href="../index.html"><h2>HOME</h2></a>
-    <ul>
-      <li><a href="c1-chefs-kitchen.html">Chef's Kitchen</a></li>
-      <li><a href="c3_thinking-style.html">Thinking Style and Learning</a></li>
-      <li><a href="c4-tech-issues.html">Women and the Tech Industry</a></li>
-      <li><a href="c5-feedback.html">Pair Programming</a></li>
-      <li>Stereotype Threat</li>
-      <li><a href="c7-values.html">Affirmation and Stereotype Threat</a></li>
-      <li><a href="c8-conflict.html">Conflict</a></li>
-    </ul>
+  <div class="container">
+    <div class="row">    
+      <div class="col-md-8 blog-main col-md-offset-2">
+        <div class="blog-post">
+          <h2>Stereotype Threat</h2>
+          <p class="blog-post-meta">January 30, 2015</p>
+          <p>
+          Today I learned about stereotype threat, which Wikipedia defines as, "a situational predicament in which people are or feel themselves to be at a risk of confirming negative stereotypes about their social group.” Going off of that, I would like to highlight a specific instance in which I experienced stereotype threat myself. Long before joining Dev Bootcamp and I was learning to code on my own, I reached out to a programming friend to explain some concepts regarding Ruby classes to me. I just started learning about classes, and I always regarded my friend to being super smart. Therefore it was a clear choice for me to reach out to him for assistance. 
+          </p>
+
+          <p>
+          To make a long story short, he said to me,”You might want to reconsider coding because you don’t seem to have the natural inclination for it.” I have to admit, after hearing those words, I was absolutely crushed. I started questioning myself, and wondering whether I should continue to learn how to code. Maybe he is right, I wouldn’t considered myself a crazy math whiz nor do I possess some sort of superhuman ability to solve logic puzzles. Maybe there is a reason why this area is dominated by male. After learning about stereotype threat and looking back to this particular incident, my insecurities mirror the negative female stereotypes regarding math, logic and coding in general.   
+          </p>
+
+          <p>
+          One way to combat threat stereotype is to encourage individuals to think of themselves in terms of unique characteristics, particularly possessing characteristics that are shared by the threatened, dominated group. I used this technique even before reading about it and being aware of it. I have to say that it was proven to be effective. At that time, I reassured myself I have the capacity for coding, just like my friend. I am college-educated, just like my friend. In fact, it makes me more confident to know that I went to a college that is known for being one of the best public universities in the country. I went into accounting, so I am able to maneuver around and work with numbers. If I can figure out why the total is off by one cent within a spreadsheet, then I find a missing closing parentheses in a block of code. A long time has passed since my friend made his comment, and I am glad to say that I am still coding away.         
+          </p>    
+        </div>  
+      </div>
+    </div>
   </div>
-
-  <div class = "text">
-  <a><h1>Stereotype Threat</h1></a>
-  <h5>January 30, 2015</h5>
-    <p>
-    Today I learned about stereotype threat, which Wikipedia defines as, "a situational predicament in which people are or feel themselves to be at a risk of confirming negative stereotypes about their social group.” Going off of that, I would like to highlight a specific instance in which I experienced stereotype threat myself. Long before joining Dev Bootcamp and I was learning to code on my own, I reached out to a programming friend to explain some concepts regarding Ruby classes to me. I just started learning about classes, and I always regarded my friend to being super smart. Therefore it was a clear choice for me to reach out to him for assistance. 
-    </p>
-
-    <p>
-    To make a long story short, he said to me,”You might want to reconsider coding because you don’t seem to have the natural inclination for it.” I have to admit, after hearing those words, I was absolutely crushed. I started questioning myself, and wondering whether I should continue to learn how to code. Maybe he is right, I wouldn’t considered myself a crazy math whiz nor do I possess some sort of superhuman ability to solve logic puzzles. Maybe there is a reason why this area is dominated by male. After learning about stereotype threat and looking back to this particular incident, my insecurities mirror the negative female stereotypes regarding math, logic and coding in general.   
-    </p>
-
-    <p>
-    One way to combat threat stereotype is to encourage individuals to think of themselves in terms of unique characteristics, particularly possessing characteristics that are shared by the threatened, dominated group. I used this technique even before reading about it and being aware of it. I have to say that it was proven to be effective. At that time, I reassured myself I have the capacity for coding, just like my friend. I am college-educated, just like my friend. In fact, it makes me more confident to know that I went to a college that is known for being one of the best public universities in the country. I went into accounting, so I am able to maneuver around and work with numbers. If I can figure out why the total is off by one cent within a spreadsheet, then I find a missing closing parentheses in a block of code. A long time has passed since my friend made his comment, and I am glad to say that I am still coding away.         
-    </p>      
-  </div>
-
-<hr>
-
-  <div class = "footer">
-    Created by Ling Giang</h4>
-  </div>
-</body>
+  
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
